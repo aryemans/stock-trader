@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44482",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "/Users/aryemans/stock-trader/stock-trader-backend/stock-trader-backend/ClientApp/",
+"MaxTimeoutInSeconds": "120"
+}
+}

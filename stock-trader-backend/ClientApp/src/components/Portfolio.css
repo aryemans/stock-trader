@@ -1,0 +1,45 @@
+/* Set default styles for the table and its elements */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Set styles for specific elements within the table */
+  .caption {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Optional: set styles for different table states */
+  table.empty {
+    border: 1px solid #ccc;
+  }
+  
+  table.loading {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .link-class {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .link-class:hover {
+    text-decoration: underline;
+  }

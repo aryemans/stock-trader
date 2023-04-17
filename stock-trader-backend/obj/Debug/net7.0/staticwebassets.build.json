@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qZidFNVzGx02DFaYx/i8mSDZa2VyfEx8RNNufXdxedA=",
+  "Source": "stock-trader-backend",
+  "BasePath": "_content/stock-trader-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
