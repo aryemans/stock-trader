@@ -29,30 +29,6 @@ public class MySqlCommands
             cmd = conn.CreateCommand();
         }
 
-        //public List<object[]> SelectAll(String table)
-        //{
-        //    List<object[]> list;
-        //    try
-        //    {
-        //        list = new List<object[]>();
-        //        cmd.CommandText = "SELECT * FROM @table";
-        //        cmd.Parameters.AddWithValue("@table", table);
-        //        var reader = cmd.ExecuteReader();
-        //        list = addToList(reader, list);
-        //        reader.Close();
-        //        return list;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine(ex.Message);
-        //    }
-        //    finally
-        //    {
-        //        conn.Dispose();
-        //    }
-
-        //    return new List<object[]>();
-        //}
         public List<object[]> Select(string field)
         {
             List<object[]> list;
@@ -574,33 +550,6 @@ public class MySqlCommands
 
             return 0;
         }
-        //public async Task<int> UpdateHolidaySchedule(List<ScheduleObject> schedule)
-        //{
-        //    try
-        //    {
-        //        cmd.CommandText = "UPDATE market SET startTime = CASE @holidayColumQuery END WHERE dayOfWeek IN (@whereQuery);";
-        //        var holidayColumnQuery = "";
-        //        var whereQuery = new List<string>();
-        //        foreach (ScheduleObject day in schedule)
-        //        {
-        //            holidayColumnQuery = holidayColumnQuery + String.Format("WHEN dayOfWeek = {0} THEN {1} ", day.dayOfWeek ?? "", day.isHoliday ?? "true");
-        //            whereQuery.Add((day.dayOfWeek ?? ""));
-        //        }
-        //        cmd.Parameters.AddWithValue("@holidayColumnQuery", holidayColumnQuery);
-        //        cmd.Parameters.AddWithValue("@whereQuery", string.Join(",", whereQuery));
-        //        return await cmd.ExecuteNonQueryAsync();
-        //}
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine(ex.Message);
-        //    }
-        //    finally
-        //    {
-        //        conn.Dispose();
-        //    }
-
-        //    return 0;
-        //}
 
         private async Task<List<object[]>> addToListAsync(DbDataReader reader, List<object[]> list)
         {
